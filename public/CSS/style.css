@@ -1,0 +1,274 @@
+/* import google font i am using ubuntu font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Estonia&family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* scrolling  */
+html{
+    scroll-behavior: smooth;
+}
+
+/* for logo */
+.logo{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 44%;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/* navigation bar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+  
+}
+
+.nav-list{
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.nav-list li{
+    list-style-type: none;
+    padding: 26px 36px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+    color: grey;
+}
+
+
+/* serach bar */
+#search{
+    border:2px solid gray;
+    border-radius: 4px;
+    /* height: 10px; */
+    font-size: 17px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.rightNav{
+    width: 50%;
+    /* background-color: turquoise; */
+    text-align: right;
+    padding: 0 23px;
+}
+
+/* background image */
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../images/building.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+/* upper middle */
+.firstsection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 60%;
+}
+
+.firstHalf{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    width: 150%;
+    display: block;
+    margin: auto ;
+    border: 2px solid white;
+}
+
+/* middle text */
+.text-big{
+    font-size: 40px;
+}
+
+.text-small{
+    font-size: 20px;
+}
+
+.btn{
+    margin: 10px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    height: 32px;
+    width: 100px;
+}
+.btn:hover{
+    background-color: rgba(245, 245, 245, 0.089);
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.btn-sm{
+    border: 1px solid white;
+    width: 80px;
+}
+.btn-dark{
+    color: black;
+    border:2px solid black;
+}
+
+/* middle image butterfly */
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+   font-family: 'Ubuntu', sans-serif;;
+   
+}
+ 
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.param{
+    padding: 50px;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* adding border in images  */
+.image{
+    border-radius: 25px;
+}
+
+.contact{
+    background-color: #eff0f4;
+    height: 80vh;
+}
+
+.text-center{
+    text-align: center;
+    padding:25px;
+    font-size: 45px;
+}
+
+.form{
+    max-width: 60%;
+    margin: auto;
+}
+
+.form-input{
+    margin: 30px 0;
+    margin: 5px 3px;
+    font-size: 19px;
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+/* footer */
+.text-footer{
+    color: white;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+/* making ahambuger  */
+.burger{
+    display: none;
+   cursor: pointer;
+   position: absolute;
+   right: 5%;
+   top: 15px;
+}
+.line{
+    width: 33px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 3px;
+}
+/* meadia  */
+@media only screen and (max-width: 1024px ) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 450px;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+        width: 100%;
+
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100% ;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-opa-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+      
+    }
+    .param{
+        padding: 0;
+    }
+    .param-resp{
+        font-size: 15px;
+    }
+    .image{
+        height: 150px;
+        width: 250px;
+        border-radius: none;
+    }
+
+}
+
+
