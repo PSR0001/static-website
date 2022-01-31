@@ -7,11 +7,10 @@ const server = http.createServer(app);
 
 const port = process.env.PORT || 3000
 
-// app.use(express.static('public'))
-// app.use('/', express.static('public'))
+app.use('/', express.static('public'))
 app.set('view engine', 'pug')
 
-app.get('/', function (req, res) {
+app.get('/home', function (req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there!' })
 })
 
