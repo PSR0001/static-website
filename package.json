@@ -1,0 +1,22 @@
+{
+  "name": "test_heroku_003",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Partha Singha Roy",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "pug": "^3.0.2",
+    "serve-favicon": "^2.5.0"
+  },
+  "engines": {
+    "node": " 16.13.2",
+    "npm": " 8.1.2"
+  }
+}
